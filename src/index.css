@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* clipped image on text */
+.image-text {
+  /* font-size: 72px;
+  font-weight: bold; */
+  background: url("https://res.cloudinary.com/djatqa2lq/image/upload/v1716328584/pattern01_g1ucce.png")
+    no-repeat center center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.dark-image-text {
+  /* font-size: 72px;
+  font-weight: bold; */
+  background: url("https://res.cloudinary.com/djatqa2lq/image/upload/v1716328565/gold_bg_yaybsl.jpg")
+    no-repeat center center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.menu_bg {
+  background: url("https://res.cloudinary.com/djatqa2lq/image/upload/v1716328785/pattern_white_tnacqy.png"),
+    rgba(255, 255, 255, 1);
+  background-size: cover;
+  background-position: center;
+}
+.dark_menu_bg {
+  background: url("https://res.cloudinary.com/djatqa2lq/image/upload/v1716328785/pattern_white_tnacqy.png"),
+    rgb(5, 28, 49);
+  background-size: cover;
+  background-position: center;
+}
+
+/* @media (min-width: 900px) {
+  .custom-margin {
+    margin-top: 4.5rem;
+  }
+} */
