@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../../assets/profpic.jpg";
 import { AnimatedText } from "../UI/AnimatedText";
 import { GreenRects, PurpleRects } from "../../assets/icons/icons";
 interface AboutMeProps {}
@@ -9,8 +8,8 @@ export const AboutMe: React.FunctionComponent<AboutMeProps> = () => {
       <div className="relative">
         <figure className="xl:w-[30rem] xl:h-[35rem] lg:w-[25rem] lg:h-[25rem] md:w-[20rem] md:h-[20rem] sm:w-[20rem] sm:h-[24rem] w-[17rem] h-[22rem] rounded-md overflow-clip relative">
           <img
-            src={image}
-            alt="aramide img"
+            src={`https://res.cloudinary.com/djatqa2lq/image/upload/v1716155887/profpic_b4xkc8.jpg`}
+            alt="aramide photo"
             className="w-full h-full object-cover object-center"
           />
         </figure>

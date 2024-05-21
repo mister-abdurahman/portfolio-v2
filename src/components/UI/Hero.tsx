@@ -1,5 +1,6 @@
 import React, { useCallback, useContext } from "react";
 import Particles from "react-particles";
+import image from "../../assets/images/profpic.jpg";
 import { loadSlim } from "tsparticles-slim";
 import {
   GithubIcon,
@@ -167,7 +168,10 @@ export const Hero: React.FunctionComponent<HeroProps> = () => {
           <figure className="relative border-8 ring-8 ring-slate-100 dark:ring-slate-200 border-blue-100 dark:border-blue-400 rounded-full lg:w-[20rem] lg:h-[20rem] md:w-[14rem] md:h-[14rem] sm:h-[20rem] sm:w-[20rem] h-[16rem] w-[16rem] bg-slate-400 overflow-clip z-10">
             <img
               className="absolute w-full h-full object-center object-cover"
-              src="https://res.cloudinary.com/djatqa2lq/image/upload/v1716155887/profpic_b4xkc8.jpg"
+              src={`${
+                image ||
+                "https:res.cloudinary.com/djatqa2lq/image/upload/v1716155887/profpic_b4xkc8.jpg"
+              }`}
               // src="https://res.cloudinary.com/djatqa2lq/image/upload/v1716041886/PXL_20240218_184227481.PORTRAIT_rwzz8b.jpg"
               alt="profile image"
             />

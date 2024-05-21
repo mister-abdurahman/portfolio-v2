@@ -20,7 +20,8 @@ html {
 .image-text {
   /* font-size: 72px;
   font-weight: bold; */
-  background: url("https://res.cloudinary.com/djatqa2lq/image/upload/v1716328584/pattern01_g1ucce.png")
+  background: url("./assets/images/pattern_text.jpg")
+    /* background: url("https://res.cloudinary.com/djatqa2lq/image/upload/v1716328584/pattern01_g1ucce.png") */
     no-repeat center center;
   background-size: cover;
   -webkit-background-clip: text;
@@ -31,7 +32,8 @@ html {
 .dark-image-text {
   /* font-size: 72px;
   font-weight: bold; */
-  background: url("https://res.cloudinary.com/djatqa2lq/image/upload/v1716328565/gold_bg_yaybsl.jpg")
+  background: url("./assets/images/gold_bg.jpg")
+    /* background: url("https://res.cloudinary.com/djatqa2lq/image/upload/v1716328565/gold_bg_yaybsl.jpg") */
     no-repeat center center;
   background-size: cover;
   -webkit-background-clip: text;
