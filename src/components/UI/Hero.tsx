@@ -1,27 +1,23 @@
 import React, { useCallback, useContext } from "react";
-import image from "../../assets/profpic.jpg";
-import image1 from "../../assets/react.svg";
-import { NavLink } from "react-router-dom";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import {
   GithubIcon,
   GoldRects,
   LinkedInIcon,
-  PinkRects,
   PurpleRects,
-  RightArrowIcon,
   TwitterIcon,
 } from "../../assets/icons/icons";
 import { ThemeContext } from "../../App";
-import { FaLongArrowAltRight, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { Engine } from "tsparticles-engine";
 
 interface HeroProps {}
 export const Hero: React.FunctionComponent<HeroProps> = () => {
   const { isDarkmode } = useContext(ThemeContext);
-  const particlesInit = useCallback(async (engine: any) => {
+  const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
   }, []);
   const isMobile = window.innerWidth <= 820;

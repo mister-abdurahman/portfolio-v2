@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { PhoneIcon } from "../assets/icons/icons";
 import { useIsPresent } from "framer-motion";
 import { Header } from "../components/UI/Header";

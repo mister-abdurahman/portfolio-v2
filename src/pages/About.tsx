@@ -1,5 +1,5 @@
 import { useIsPresent } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Header } from "../components/UI/Header";
 import { PageHero } from "../components/UI/PageHero";
 import { AboutMe } from "../components/About/AboutMe";

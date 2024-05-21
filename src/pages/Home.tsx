@@ -3,7 +3,7 @@ import { Hero } from "../components/UI/Hero";
 import { Projects } from "../components/Projects/Projects";
 import { Skills } from "../components/Skills/Skills";
 import { Contact } from "../components/UI/Contact";
-import { motion, useIsPresent } from "framer-motion";
+import { useIsPresent } from "framer-motion";
 import { useEffect } from "react";
 import { RouteSwitchAnimation } from "../components/UI/RouteSwitchAnimation";
 
