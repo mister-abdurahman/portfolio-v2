@@ -94,7 +94,7 @@ const playGround = [
 export const Projects: React.FunctionComponent<ProjectProps> = () => {
   const location = useLocation();
   const [projectsToShow] = useState(
-    location.pathname === "/works" ? projects : playGround
+    location.pathname === "/playground" ? playGround : projects
   );
   return (
     <div className="py-10 bg-bgImage_1 dark:bg-bgImage_dark pb-32">

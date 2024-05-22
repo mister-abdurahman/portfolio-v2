@@ -134,7 +134,9 @@ export const Header: React.FunctionComponent<headerProps> = () => {
           </NavLink>
           <a
             className={`hover:text-blue-600`}
-            href={"./ramadan_v1.pdf"}
+            href={
+              "https://drive.google.com/file/d/1kAUEJglt0-6pRqsNycHzQCwqGlpT7L9a/view?usp=sharing"
+            }
             target="_blank"
           >
             Resumé
@@ -253,7 +255,10 @@ export const Header: React.FunctionComponent<headerProps> = () => {
             >
               <li>PlayGround</li>
             </NavLink>
-            <a href="./ramadan_v1.pdf" target="_blank">
+            <a
+              href="https://drive.google.com/file/d/1kAUEJglt0-6pRqsNycHzQCwqGlpT7L9a/view?usp=sharing"
+              target="_blank"
+            >
               <li>Resumé</li>
             </a>
           </ul>

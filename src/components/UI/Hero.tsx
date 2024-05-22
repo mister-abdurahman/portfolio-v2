@@ -119,7 +119,7 @@ export const Hero: React.FunctionComponent<HeroProps> = () => {
           </p>
           <div className="flex gap-2 items-center group">
             <a
-              href={"./ramadan_v1.pdf"}
+              href={"https://drive.google.com/file/d/1kAUEJglt0-6pRqsNycHzQCwqGlpT7L9a/view?usp=sharing"}
               target="_blank"
               className={`font-semibold ${
                 isDarkmode ? "text-blue-400" : "text-blue-600"
