@@ -22,7 +22,7 @@ export const PageHero: React.FunctionComponent<PageHeroProps> = ({
   const location = useLocation();
   const { isDarkmode } = useContext(ThemeContext);
   return (
-    <section className="lg:px-24 md:px-20 sm:px-12 px-8 lg:py-32 py-24 bg-hero_bg dark:bg-slate-950 dark:text-primary_2 relative mt-[4.8rem] lg:mt-[6rem]">
+    <section className="lg:px-24 md:px-20 sm:px-12 px-5 lg:py-32 py-24 bg-hero_bg dark:bg-slate-950 dark:text-primary_2 relative mt-[4.8rem] lg:mt-[6rem]">
       <div className="flex gap-3 items-center">
         <span>{topIcon}</span>
         <p className="uppercase">{topText}</p>
