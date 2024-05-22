@@ -39,11 +39,11 @@ export const AboutMe: React.FunctionComponent<AboutMeProps> = () => {
           speed ⚡.
         </p>
         <p>
-          Over the span of my 3 years of experience, I have worked on projects
-          in the Education sector, Health sector and also on management systems.
-          My experience in these different sectors has increased my knowledge
-          and skill set to be able to deliver user friendly, modern, accesible
-          web applications.
+          Over the span of my 3 years of experience most of which i spent
+          working in a SaaS company, I have worked on projects in the Education
+          sector, Health sector and also on management systems. My experience in
+          these different sectors has increased my knowledge and skill set to be
+          able to deliver user friendly, modern, accesible web applications.
         </p>
         <p>
           When I'm off my computer, I'd rather spend time reading valued
