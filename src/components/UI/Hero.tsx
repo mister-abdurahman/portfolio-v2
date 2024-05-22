@@ -95,7 +95,7 @@ export const Hero: React.FunctionComponent<HeroProps> = () => {
           detectRetina: isMobile ? false : true,
         }}
       />
-      <div className="sm:px-16 px-7 sm:py-24 py-10 flex flex-wrap gap-4 items-center justify-between">
+      <div className="sm:px-16 px-4 sm:py-24 py-10 flex flex-wrap gap-4 items-center justify-between">
         <div className="lg:basis-3/5 md:basis-[55%] basis-full flex flex-col sm:gap-7 gap-4 z-20">
           <p
             className={`text-[1.25rem] ${
@@ -119,7 +119,9 @@ export const Hero: React.FunctionComponent<HeroProps> = () => {
           </p>
           <div className="flex gap-2 items-center group">
             <a
-              href={"https://drive.google.com/file/d/1kAUEJglt0-6pRqsNycHzQCwqGlpT7L9a/view?usp=sharing"}
+              href={
+                "https://drive.google.com/file/d/1kAUEJglt0-6pRqsNycHzQCwqGlpT7L9a/view?usp=sharing"
+              }
               target="_blank"
               className={`font-semibold ${
                 isDarkmode ? "text-blue-400" : "text-blue-600"
