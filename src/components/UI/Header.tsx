@@ -129,6 +129,9 @@ export const Header: React.FunctionComponent<headerProps> = () => {
           <NavLink className={`hover:text-blue-600`} to={"/contact"}>
             Contact me
           </NavLink>
+          <NavLink className={`hover:text-blue-600`} to={"/playground"}>
+            PlayGround
+          </NavLink>
           <a
             className={`hover:text-blue-600`}
             href={"./ramadan_v1.pdf"}
@@ -173,7 +176,7 @@ export const Header: React.FunctionComponent<headerProps> = () => {
     <header
       ref={headerRef}
       id="header"
-      className={`fixed items-center w-full z-50 bg-white shadow-headerShadow dark:shadow-darkHeaderShadow dark:bg-slate-950 px-24 py-6 ${
+      className={`fixed items-center w-full z-50 bg-white shadow-headerShadow dark:shadow-darkHeaderShadow dark:bg-slate-950 px-16 py-6 ${
         hideHeader
           ? "-top-[100px] transition-[top] duration-500 ease-out"
           : "top-0 transition-[top] duration-500 ease-out"
@@ -239,6 +242,16 @@ export const Header: React.FunctionComponent<headerProps> = () => {
               }
             >
               <li>Contact me</li>
+            </NavLink>
+            <NavLink
+              to={"/playground"}
+              className={
+                location.pathname === "/playground"
+                  ? `dark:text-blue-400 text-blue-600 font-bold`
+                  : ""
+              }
+            >
+              <li>PlayGround</li>
             </NavLink>
             <a href="./ramadan_v1.pdf" target="_blank">
               <li>Resumé</li>

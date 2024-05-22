@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { EachProject } from "./EachProject";
 import SectionHeading from "../UI/SectionHeader";
 import healthBuddy from "../../assets/images/healthbuddy.jpg";
 import sociopedia from "../../assets/images/sociopedia.jpg";
 import worldwise from "../../assets/images/worldwise.jpg";
 import wildoasis from "../../assets/images/wildoasis.jpg";
+
+import popcorn from "../../assets/images/popcorn.jpg";
+import quizzical from "../../assets/images/quizzical.jpg";
+import tenzies from "../../assets/images/tenzies.jpg";
+import faraway from "../../assets/images/faraway.jpg";
+import classyweather from "../../assets/images/classyweather.jpg";
+import { useLocation } from "react-router-dom";
 
 interface ProjectProps {}
 
@@ -47,12 +54,53 @@ const projects = [
   },
 ];
 
+const playGround = [
+  {
+    name: "Popcorn",
+    description:
+      "A movies website react app like the popular IMDB that displays movies based on your search with their information and other useful functionalities.",
+    image: popcorn,
+    url: "https://use-popcorn-v1.vercel.app",
+  },
+  {
+    name: "Far Away",
+    description:
+      "Your personal assistant to ensure you take all your stuffs when planning for your vacation 🏖⛱.",
+    image: faraway,
+    url: "https://far-away-eight.vercel.app",
+  },
+  {
+    name: "Quizzical",
+    description:
+      "A quizz app that asks questions across all fields of study to test your IQ and knowledge span.",
+    image: quizzical,
+    url: "https://react-quizzical-ts.vercel.app/",
+  },
+  {
+    name: "Tenzies",
+    description: "A React Tenzies Game. 🎲",
+    image: tenzies,
+    url: "https://react-tenzies-orcin-rho.vercel.app",
+  },
+  {
+    name: "Classy Weather",
+    description:
+      "A react weather app to see real time weather forcast in different locations",
+    image: classyweather,
+    url: "https://classy-weather-nu.vercel.app",
+  },
+];
+
 export const Projects: React.FunctionComponent<ProjectProps> = () => {
+  const location = useLocation();
+  const [projectsToShow] = useState(
+    location.pathname === "/works" ? projects : playGround
+  );
   return (
     <div className="py-10 bg-bgImage_1 dark:bg-bgImage_dark pb-32">
       <SectionHeading sectionName="Selected Projects" />
       <div className="md:space-y-24 space-y-32">
-        {projects.map((project, index) => (
+        {projectsToShow.map((project, index) => (
           <EachProject
             key={index}
             name={project.name}
