@@ -18,6 +18,7 @@ import { EachSkill } from "./EachSkill";
 import { SiChakraui, SiExpress, SiMongodb, SiSupabase } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import SectionHeading from "../UI/SectionHeader";
+import { TbBrandNextjs } from "react-icons/tb";
 
 interface SkillsProps {}
 
@@ -29,6 +30,7 @@ const progLang = [
 const libFram = [
   { icon: <ReactIcon />, text: "React" },
   { icon: <ReduxIcon />, text: "Redux" },
+  { icon: <TbBrandNextjs className="w-6 h-6" />, text: "NextJs" },
   { icon: <TailwindIcon />, text: "Tailwind" },
   {
     icon: <SiChakraui className="w-6 h-6 fill-[#319795]" />,
@@ -80,8 +82,8 @@ export const Skills: React.FunctionComponent<SkillsProps> = () => {
   return (
     <div className="py-10 sm:py-16 bg-hero_bg dark:bg-slate-950 sm:px-20 px-6">
       <SectionHeading sectionName="Skills" />
-      <section className="flex flex-wrap justify-between sm:mt-8 mt-0 dark:text-primary_2">
-        <div>
+      <section className="flex flex-wrap justify-between md:mt-auto mt-4 dark:text-primary_2 sm:space-y-0 space-y-6">
+        <div className="">
           <h4 className="font-semibold text-lg">Programming Languages</h4>
           <div className="md:grid md:grid-cols-2 flex flex-wrap lg:gap-8 md:gap-7 sm:gap-6 gap-4 md:mt-6 mt-3">
             {progLang.map((each, i) => (
@@ -89,7 +91,7 @@ export const Skills: React.FunctionComponent<SkillsProps> = () => {
             ))}
           </div>
         </div>
-        <div className="md:mt-auto mt-8">
+        <div className="">
           <h4 className="font-semibold text-lg">Libraries & Frameworks</h4>
           <div className="md:grid md:grid-cols-2 flex flex-wrap lg:gap-8 md:gap-7 sm:gap-6 gap-4 md:mt-6 mt-3">
             {libFram.map((each, i) => (
@@ -97,7 +99,7 @@ export const Skills: React.FunctionComponent<SkillsProps> = () => {
             ))}
           </div>
         </div>
-        <div className="md:mt-auto mt-8">
+        <div className="">
           <h4 className="font-semibold text-lg">Tools & Platforms</h4>
           <div className="md:grid md:grid-cols-3 flex flex-wrap lg:gap-8 md:gap-7 sm:gap-6 gap-4 md:mt-6 mt-3">
             {toolsSkills.map((each, i) => (
