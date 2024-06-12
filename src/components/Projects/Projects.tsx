@@ -11,13 +11,21 @@ import quizzical from "../../assets/images/quizzical.jpg";
 import tenzies from "../../assets/images/tenzies.jpg";
 import faraway from "../../assets/images/faraway.jpg";
 import classyweather from "../../assets/images/classyweather.jpg";
+import the_wild_oasis from "../../assets/images/the_wild_oasis.jpg";
 import { useLocation } from "react-router-dom";
 
 interface ProjectProps {}
 
 const projects = [
   {
-    name: "Wild Oasis",
+    name: "Wild Oasis (Customer-Faced)",
+    description:
+      "A NextJs fullstack hotel app for customers to reserve bookings for different cabins, manage their reserves and other customer operations. This app is a fullstack app and was built with NextJs. It has features such as Google Authentication, Data Streaming, Image optimization, beautiful UI and many more amazing features.",
+    image: the_wild_oasis,
+    url: "https://the-wild-oasis-website-v1.vercel.app/",
+  },
+  {
+    name: "Wild Oasis (Internal)",
     description:
       "An hotel admin management system for managing the bookings, cabins and customers operations in the organization. This app has features such as Pagination, Data Filtering, Sorting, Responsiveness, Dark Mode, Authentication, Data Fetching and Updating and so on.",
     image:
