@@ -1,10 +1,8 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { MdLightMode, MdOutlineDarkMode } from "react-icons/md";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { ScrollUpButton } from "../../assets/icons/icons";
 import { Link } from "react-scroll";
-import { IoMdClose } from "react-icons/io";
 import { ThemeContext } from "../../App";
 
 interface headerProps {}
