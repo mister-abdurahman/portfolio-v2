@@ -22,6 +22,8 @@ export const Header: React.FunctionComponent<headerProps> = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
   const headerRef = useRef<HTMLDivElement>(null);
 
+  console.log(openMenu);
+
   useEffect(() => {
     scrollTo(0, 0);
   }, []);
@@ -79,7 +81,10 @@ export const Header: React.FunctionComponent<headerProps> = () => {
       <div className="flex items-center gap-7">
         <span className="rounded-full p-2 dark:bg-blue-800 shadow-md flex justify-center items-center">
           {isDarkmode ? (
-            <MdLightMode onClick={() => toggleTheme()} className="w-8 h-8" />
+            <MdLightMode
+              onClick={() => toggleTheme()}
+              className="w-8 h-8 dark:fill-blue-200"
+            />
           ) : (
             <MdOutlineDarkMode
               onClick={() => toggleTheme()}
@@ -87,27 +92,26 @@ export const Header: React.FunctionComponent<headerProps> = () => {
             />
           )}
         </span>
-        <span className="z-30">
-          {openMenu ? (
-            <IoMdClose
-              className="w-9 h-9 dark:fill-white"
-              onClick={() => setOpenMenu(false)}
-            />
-          ) : (
-            <GiHamburgerMenu
-              className="w-8 h-8 dark:fill-white"
-              onClick={() => setOpenMenu(true)}
-            />
-          )}
-        </span>
+        {/*  */}
+        <div
+          onClick={() => setOpenMenu((prev) => !prev)}
+          className="bg-white dark:bg-blue-800 cursor-pointer shadow-md rounded-full w-12 h-12 z-30 flex justify-center items-center"
+        >
+          <span
+            className={`relative bg-black dark:bg-blue-200 dark:before:bg-blue-200 dark:after:bg-blue-200 w-8 h-[2px] menubar ${
+              openMenu && "open"
+            }`}
+          >
+            &nbsp;
+          </span>
+        </div>
+        {/*  */}
       </div>
       <img
         className="w-full h-full absolute inset-0 object-cover object-center dark:opacity-20 -z-10"
         src={`https://res.cloudinary.com/dt9pwfpi5/image/upload/v1700223294/Vector-bg_ijfifv.png`}
         alt="header bg image"
       />
-      {/* <span>
-      </span> */}
       <div
         className={`fixed flex justify-center items-center h-screen z-20 transition duration-800 ease-out ${
           openMenu ? "inset-0 translate-x-0" : "-translate-x-[90rem]"

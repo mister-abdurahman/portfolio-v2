@@ -60,3 +60,31 @@ html {
     margin-top: 4.5rem;
   }
 } */
+
+.menubar::before,
+.menubar::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s;
+}
+.menubar::before {
+  bottom: 0.4rem;
+}
+.menubar::after {
+  right: 0px;
+  top: 0.4rem;
+}
+.open.menubar {
+  background-color: transparent !important;
+}
+.open.menubar::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.open.menubar::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
