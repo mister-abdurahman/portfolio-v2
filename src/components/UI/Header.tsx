@@ -137,7 +137,7 @@ export const Header: React.FunctionComponent<headerProps> = () => {
           <a
             className={`hover:text-blue-600`}
             href={
-              "https://drive.google.com/file/d/1EqXlIwqBqG7Gr2s80_tYvbr4BnCYO99z/view?usp=sharing"
+              "https://drive.google.com/file/d/1-d-hdX2hwABmlbSWbEmsyUJKG0FepBR_/view?usp=sharing"
             }
             target="_blank"
           >
@@ -258,7 +258,7 @@ export const Header: React.FunctionComponent<headerProps> = () => {
               <li>PlayGround</li>
             </NavLink>
             <a
-              href="https://drive.google.com/file/d/1EqXlIwqBqG7Gr2s80_tYvbr4BnCYO99z/view?usp=sharing"
+              href="https://drive.google.com/file/d/1-d-hdX2hwABmlbSWbEmsyUJKG0FepBR_/view?usp=sharing"
               target="_blank"
             >
               <li>Resumé</li>
