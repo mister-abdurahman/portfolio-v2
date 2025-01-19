@@ -5,6 +5,7 @@ import healthBuddy from "../../assets/images/healthbuddy.jpg";
 import sociopedia from "../../assets/images/sociopedia.jpg";
 import worldwise from "../../assets/images/worldwise.jpg";
 import wildoasis from "../../assets/images/wildoasis.jpg";
+import redbud from "../../assets/images/redbud_show.png";
 
 import popcorn from "../../assets/images/popcorn.jpg";
 import quizzical from "../../assets/images/quizzical.jpg";
@@ -23,6 +24,13 @@ const projects = [
       "A NextJs fullstack hotel app for customers to reserve bookings for different cabins, manage their reserves and other customer operations. This app is a fullstack app and was built with NextJs. It has features such as Google Authentication, Data Streaming, Image optimization, beautiful UI and many more amazing features.",
     image: the_wild_oasis,
     url: "https://the-wild-oasis-website-v1.vercel.app/",
+  },
+  {
+    name: "Gadget Store Ecommerce",
+    description:
+      "A NextJs fullstack ecommerce app for customers to find items they would love to get, add them to cart and place an order for them while enjoying a beautiful shopping experience. They could also sign up to save thier shopping status and history and when next they come back they start from where they stopped. This app is a fullstack app and was built with NextJs and Supabase to ensure an optimized frontend and a robust and efficient backend database.",
+    image: redbud,
+    url: "https://redbud-ecommerce.vercel.app/",
   },
   {
     name: "Wild Oasis (Internal)",

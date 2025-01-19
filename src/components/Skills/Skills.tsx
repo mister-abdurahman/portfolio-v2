@@ -15,10 +15,16 @@ import {
   WebpackIcon,
 } from "../../assets/icons/icons";
 import { EachSkill } from "./EachSkill";
-import { SiChakraui, SiExpress, SiMongodb, SiSupabase } from "react-icons/si";
+import {
+  SiChakraui,
+  SiExpress,
+  SiMongodb,
+  SiShadcnui,
+  SiSupabase,
+} from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import SectionHeading from "../UI/SectionHeader";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
 
 interface SkillsProps {}
 
@@ -33,10 +39,15 @@ const libFram = [
   { icon: <TbBrandNextjs className="w-6 h-6" />, text: "NextJs" },
   { icon: <TailwindIcon />, text: "Tailwind" },
   {
+    icon: <TbBrandReactNative className="w-6 h-6 text-blue-600" />,
+    text: "React Native",
+  },
+  {
     icon: <SiChakraui className="w-6 h-6 fill-[#319795]" />,
     text: "Chakra UI",
   },
   { icon: <MaterialUiIcon />, text: "Material UI" },
+  { icon: <SiShadcnui />, text: "Shadcn UI" },
   { icon: <SiExpress className="w-6 h-6 fill-[#1a2020]" />, text: "Express" },
 ];
 const toolsSkills = [
