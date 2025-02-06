@@ -12,6 +12,7 @@ import quizzical from "../../assets/images/quizzical.jpg";
 import tenzies from "../../assets/images/tenzies.jpg";
 import faraway from "../../assets/images/faraway.jpg";
 import classyweather from "../../assets/images/classyweather.jpg";
+import redbud_admin from "../../assets/images/redbud_admin.png";
 import the_wild_oasis from "../../assets/images/the_wild_oasis.jpg";
 import { useLocation } from "react-router-dom";
 
@@ -19,11 +20,11 @@ interface ProjectProps {}
 
 const projects = [
   {
-    name: "Wild Oasis (Customer-Faced)",
+    name: "Admin Ecommerce Management App (Internal)",
     description:
-      "A NextJs fullstack hotel app for customers to reserve bookings for different cabins, manage their reserves and other customer operations. This app is a fullstack app and was built with NextJs. It has features such as Google Authentication, Data Streaming, Image optimization, beautiful UI and many more amazing features.",
-    image: the_wild_oasis,
-    url: "https://the-wild-oasis-website-v1.vercel.app/",
+      "An Ecommerce store admin management system for managing the products, categories, brands and customers operations in the organization. This app has features such as Pagination, Data Filtering, Sorting, Responsiveness, Dark Mode, Authentication, Data Fetching and Updating and so on.",
+    image: redbud_admin,
+    url: "https://admin-redbud-ecommerce-56uq.vercel.app/",
   },
   {
     name: "Gadget Store Ecommerce",
@@ -31,6 +32,13 @@ const projects = [
       "A NextJs fullstack ecommerce app for customers to find items they would love to get, add them to cart and place an order for them while enjoying a beautiful shopping experience. They could also sign up to save thier shopping status and history and when next they come back they start from where they stopped. This app is a fullstack app and was built with NextJs and Supabase to ensure an optimized frontend and a robust and efficient backend database.",
     image: redbud,
     url: "https://redbud-ecommerce.vercel.app/",
+  },
+  {
+    name: "Wild Oasis (Customer-Faced)",
+    description:
+      "A NextJs fullstack hotel app for customers to reserve bookings for different cabins, manage their reserves and other customer operations. This app is a fullstack app and was built with NextJs. It has features such as Google Authentication, Data Streaming, Image optimization, beautiful UI and many more amazing features.",
+    image: the_wild_oasis,
+    url: "https://the-wild-oasis-website-v1.vercel.app/",
   },
   {
     name: "Wild Oasis (Internal)",
