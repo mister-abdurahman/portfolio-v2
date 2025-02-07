@@ -12,7 +12,7 @@ import quizzical from "../../assets/images/quizzical.jpg";
 import tenzies from "../../assets/images/tenzies.jpg";
 import faraway from "../../assets/images/faraway.jpg";
 import classyweather from "../../assets/images/classyweather.jpg";
-import redbud_admin from "../../assets/images/redbud_admin.png";
+import redbud_admin from "../../assets/images/redbud_admin.jpg";
 import the_wild_oasis from "../../assets/images/the_wild_oasis.jpg";
 import { useLocation } from "react-router-dom";
 
