@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Variants, motion } from "framer-motion";
 import { AnimatedText } from "../UI/AnimatedText";
 import { MdOutlineAdsClick } from "react-icons/md";
+import { IoMdAlert } from "react-icons/io";
 
 interface EachProject {
   name: string;
@@ -98,16 +99,25 @@ export const EachProject: React.FunctionComponent<EachProject> = ({
           duration={isMobile ? 0 : 0.05}
         />
         <p className="px-4">{description}</p>
-        <a
-          href={url}
-          target="_blank"
-          className="text-sm font-semibold flex items-center gap-2 px-4 w-fit"
-        >
-          View more details{" "}
-          <span>
-            <MdOutlineAdsClick className="w-4 h-4" />
-          </span>
-        </a>
+        {url === "coming soon" ? (
+          <p className="text-sm font-semibold flex items-center gap-2 px-4 w-fit">
+            App is currently being reviewed by google.
+            <span>
+              <IoMdAlert className="w-5 h-5" />
+            </span>
+          </p>
+        ) : (
+          <a
+            href={url}
+            target="_blank"
+            className="text-sm font-semibold flex items-center gap-2 px-4 w-fit"
+          >
+            View more details{" "}
+            <span>
+              <MdOutlineAdsClick className="w-4 h-4" />
+            </span>
+          </a>
+        )}
       </div>
     </motion.div>
   );

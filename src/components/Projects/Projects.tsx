@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { EachProject } from "./EachProject";
 import SectionHeading from "../UI/SectionHeader";
-import healthBuddy from "../../assets/images/healthbuddy.jpg";
 import sociopedia from "../../assets/images/sociopedia.jpg";
-import worldwise from "../../assets/images/worldwise.jpg";
 import wildoasis from "../../assets/images/wildoasis.jpg";
 import redbud from "../../assets/images/redbud_show.png";
+import coachconnect from "../../assets/images/coach-connect.png";
+import tradit from "../../assets/images/tradit-mobile.png";
+import kasieyatama from "../../assets/images/kasieyatama.png";
+import jambonz from "../../assets/images/jambonz.png";
 
 import popcorn from "../../assets/images/popcorn.jpg";
 import quizzical from "../../assets/images/quizzical.jpg";
@@ -19,6 +21,34 @@ import { useLocation } from "react-router-dom";
 interface ProjectProps {}
 
 const projects = [
+  {
+    name: "Coach Connect",
+    description:
+      "I enhanced the User interface of a peer-to-peer expertise exchange platform for a New Zealand client, using React, React Query, and Supabase. My work focused on creating a modern, responsive interface and integrating the front end with a scalable backend for seamless session management and user collaboration.",
+    image: coachconnect,
+    url: "https://www.coach-connect.xyz/",
+  },
+  {
+    name: "Tradit (Mobile)",
+    description:
+      "I developed a cross-platform mobile app using React Native that allows users to securely sell gift cards. The app features a clean, intuitive UI for a seamless trading experience, ensuring fast and reliable transactions.",
+    image: tradit,
+    url: "coming soon",
+  },
+  {
+    name: "Kasieyatama",
+    description:
+      "A full-stack printing service platform built with Next.js and Sanity, providing a complete end-to-end flow for customers and business owners. I designed and developed a custom admin dashboard that allows for seamless management of printing listings and customer submissions.",
+    image: kasieyatama,
+    url: "https://www.kasieyatama.com/",
+  },
+  {
+    name: "Jambonz Chrome Extension (Official)",
+    description:
+      "I upgraded the UI/UX of a Chrome extension for a US-based client, ensuring it met modern design standards from a new Figma design. The project was built with a tech stack of React, TypeScript, and Tailwind CSS to ensure a performant and maintainable codebase.",
+    image: jambonz,
+    url: "https://chromewebstore.google.com/detail/jambonz-webrtc-phone/ooglcebddojjkdcfaplbhhjcdkpeiggi?hl=en-US&utm_source=ext_sidebar",
+  },
   {
     name: "Admin Ecommerce Management App (Internal)",
     description:
@@ -58,24 +88,24 @@ const projects = [
       "https://res.cloudinary.com/djatqa2lq/image/upload/v1716306428/sociopedia_omcxjq.png",
     url: "https://sociopedia-frontend-ochre.vercel.app/",
   },
-  {
-    name: "Health Buddy",
-    description:
-      "An Health App for Patients to book appointments with doctors, see their last vitals details, doctor case note and see health related matters. This app as essential features such as authentication, responsiveness, data fetching and updating and so on",
-    image:
-      healthBuddy ||
-      "https://res.cloudinary.com/djatqa2lq/image/upload/v1716306784/healthbuddy_fdaghu.png",
-    url: "https://health-buddy-fe.vercel.app/",
-  },
-  {
-    name: "World Wise",
-    description:
-      "Track your travels, map your movements, record your best tours all in one app. The LeafLet Js library was used for the map tiles, This app has a React front end and a Node backend",
-    image:
-      worldwise ||
-      "https://res.cloudinary.com/djatqa2lq/image/upload/v1716306790/worldwise_d5tw6k.png",
-    url: "https://worldwise-delta.vercel.app",
-  },
+  // {
+  //   name: "Health Buddy",
+  //   description:
+  //     "An Health App for Patients to book appointments with doctors, see their last vitals details, doctor case note and see health related matters. This app as essential features such as authentication, responsiveness, data fetching and updating and so on",
+  //   image:
+  //     healthBuddy ||
+  //     "https://res.cloudinary.com/djatqa2lq/image/upload/v1716306784/healthbuddy_fdaghu.png",
+  //   url: "https://health-buddy-fe.vercel.app/",
+  // },
+  // {
+  //   name: "World Wise",
+  //   description:
+  //     "Track your travels, map your movements, record your best tours all in one app. The LeafLet Js library was used for the map tiles, This app has a React front end and a Node backend",
+  //   image:
+  //     worldwise ||
+  //     "https://res.cloudinary.com/djatqa2lq/image/upload/v1716306790/worldwise_d5tw6k.png",
+  //   url: "https://worldwise-delta.vercel.app",
+  // },
 ];
 
 const playGround = [

@@ -22,7 +22,7 @@ import {
   SiShadcnui,
   SiSupabase,
 } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
+import { FaNodeJs, FaWordpress } from "react-icons/fa";
 import SectionHeading from "../UI/SectionHeader";
 import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
 
@@ -49,6 +49,10 @@ const libFram = [
   { icon: <MaterialUiIcon />, text: "Material UI" },
   { icon: <SiShadcnui />, text: "Shadcn UI" },
   { icon: <SiExpress className="w-6 h-6 fill-[#1a2020]" />, text: "Express" },
+  {
+    icon: <FaWordpress className="w-6 h-6 fill-blue-600" />,
+    text: "Wordpress",
+  },
 ];
 const toolsSkills = [
   {
