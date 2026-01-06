@@ -16,11 +16,19 @@ import faraway from "../../assets/images/faraway.jpg";
 import classyweather from "../../assets/images/classyweather.jpg";
 import redbud_admin from "../../assets/images/redbud_admin.jpg";
 import the_wild_oasis from "../../assets/images/the_wild_oasis.jpg";
+import hokfam from "../../assets/images/hokfam.png";
 import { useLocation } from "react-router-dom";
 
 interface ProjectProps {}
 
 const projects = [
+  {
+    name: "Hok Clothing Store",
+    description:
+      "Designed and built a modern clothing e-commerce platform for a UK client, using Next.js and Tailwind for a responsive, high-speed frontend and Nest.js for a powerful backend. My work focused on creating a premium shopping experience with optimized page loads, intuitive navigation, and a secure architecture for long-term scalability.",
+    image: hokfam,
+    url: "https://shop.hokfam.com",
+  },
   {
     name: "Coach Connect",
     description:
