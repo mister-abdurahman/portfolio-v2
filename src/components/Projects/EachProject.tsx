@@ -56,11 +56,11 @@ export const EachProject: React.FunctionComponent<EachProject> = ({
 
   useEffect(() => {
     window.addEventListener("resize", () =>
-      setIsMobile(window.innerWidth <= 900)
+      setIsMobile(window.innerWidth <= 900),
     );
     return () =>
       window.removeEventListener("resize", () =>
-        setIsMobile(window.innerWidth <= 900)
+        setIsMobile(window.innerWidth <= 900),
       );
   }, [isMobile]);
   // const isMobile = window.innerWidth <= 768;
@@ -88,8 +88,8 @@ export const EachProject: React.FunctionComponent<EachProject> = ({
           isMobile
             ? "order-first sm:px-12 px-5"
             : index % 2 === 0
-            ? "order-first pl-8"
-            : "order-last"
+              ? "order-first pl-8"
+              : "order-last"
         }`}
       >
         <AnimatedText
@@ -101,7 +101,7 @@ export const EachProject: React.FunctionComponent<EachProject> = ({
         <p className="px-4">{description}</p>
         {url === "coming soon" ? (
           <p className="text-sm font-semibold flex items-center gap-2 px-4 w-fit">
-            App is currently being reviewed by google.
+            App is currently under review.
             <span>
               <IoMdAlert className="w-5 h-5" />
             </span>

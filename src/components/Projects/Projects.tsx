@@ -39,9 +39,9 @@ const projects = [
   {
     name: "Tradit (Mobile)",
     description:
-      "I developed a cross-platform mobile app using React Native that allows users to securely sell gift cards. The app features a clean, intuitive UI for a seamless trading experience, ensuring fast and reliable transactions.",
+      "I developed a cross-platform mobile and web app for a Gift card trading company using React Native that allows users to securely sell gift cards. The app features a clean, intuitive UI for a seamless trading experience, ensuring fast and reliable transactions.",
     image: tradit,
-    url: "coming soon",
+    url: "https://play.google.com/store/apps/details?id=com.abdurahman.tradeit",
   },
   {
     name: "Kasieyatama",
@@ -156,7 +156,7 @@ const playGround = [
 export const Projects: React.FunctionComponent<ProjectProps> = () => {
   const location = useLocation();
   const [projectsToShow] = useState(
-    location.pathname === "/playground" ? playGround : projects
+    location.pathname === "/playground" ? playGround : projects,
   );
   return (
     <div className="py-10 bg-bgImage_1 dark:bg-bgImage_dark pb-32">
