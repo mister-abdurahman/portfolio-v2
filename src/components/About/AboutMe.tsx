@@ -27,27 +27,19 @@ export const AboutMe: React.FunctionComponent<AboutMeProps> = () => {
           text="Meet Ramadan Aramide."
         />
         <p>
-          I am a Software Developer with 3 years of developement experience. I
-          excel in creating pixel perfect full scale web applictaions utilizing
-          edge cutting modern technlogies and tools such as React for the
-          frontend and TailwindCSS for my styling, Redux/React-Query for state
-          management, Node and MongoDB for scalable and optimized APIs.
+          I am a Full-Stack Engineer with 4 years of experience architecting high-performance SaaS solutions. I specialize in building pixel-perfect, production-ready applications using Angular or React and TailwindCSS for seamless user interfaces, paired with Node.js / Nestjs and MongoDB for robust, optimized APIs. By leveraging React-Query and Redux for React, I ensure complex state-driven applications remain responsive, scalable, and technically sound under heavy load.
         </p>
         <p>
-          I am equipped with the tools to bring ideas ideas to life whilst
-          considering optimization, modern design, accesibility, scalability and
-          speed ⚡.
+          I transform visionary concepts into market-ready products by prioritizing performance, accessibility, and architectural scalability. I don’t just write code; I build sustainable digital foundations that allow startups to scale without the burden of technical debt.
         </p>
         <p>
-          Over the span of my 3 years of experience most of which i spent
-          working in a SaaS company, I have worked on projects in the Education
-          sector, Health sector and also on management systems. My experience in
-          these different sectors has increased my knowledge and skill set to be
-          able to deliver user friendly, modern, accesible web applications.
+          Having spent my career in the fast-paced SaaS industry, I have delivered mission-critical systems across the Health, Education, and Management sectors. My deep involvement in building multi-tenant ecosystems has sharpened my ability to solve complex business problems through code. I excel at translating diverse industry requirements into user-centric, accessible, and commercially viable software solutions that drive real-world impact.
         </p>
         <p>
           When I'm off my computer, I'd rather spend time reading valued
           educational books or spend time with my family.
+
+          I believe a disciplined life outside the screen is the primary driver for the creative and high-impact engineering work I deliver.
         </p>
       </div>
     </div>

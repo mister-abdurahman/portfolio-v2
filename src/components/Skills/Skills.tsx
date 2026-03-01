@@ -13,16 +13,21 @@ import {
   TypescriptIcon,
   VercelIcon,
   WebpackIcon,
+  DirectAdmin
 } from "../../assets/icons/icons";
 import { EachSkill } from "./EachSkill";
 import {
   SiChakraui,
+  SiExpo,
   SiExpress,
   SiMongodb,
+  SiMysql,
+  SiNestjs,
+  SiRender,
   SiShadcnui,
   SiSupabase,
 } from "react-icons/si";
-import { FaNodeJs, FaWordpress } from "react-icons/fa";
+import { FaAngular, FaNodeJs, FaWordpress } from "react-icons/fa";
 import SectionHeading from "../UI/SectionHeader";
 import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
 
@@ -35,6 +40,7 @@ const progLang = [
 ];
 const libFram = [
   { icon: <ReactIcon />, text: "React" },
+  { icon: <FaAngular className="w-6 h-6 fill-[#E0234E]" />, text: "Angular" },
   { icon: <ReduxIcon />, text: "Redux" },
   { icon: <TbBrandNextjs className="w-6 h-6" />, text: "NextJs" },
   { icon: <TailwindIcon />, text: "Tailwind" },
@@ -43,12 +49,17 @@ const libFram = [
     text: "React Native",
   },
   {
+    icon: <SiExpo className="w-6 h-6" />,
+    text: "Expo",
+  },
+  {
     icon: <SiChakraui className="w-6 h-6 fill-[#319795]" />,
     text: "Chakra UI",
   },
   { icon: <MaterialUiIcon />, text: "Material UI" },
   { icon: <SiShadcnui />, text: "Shadcn UI" },
   { icon: <SiExpress className="w-6 h-6 fill-[#1a2020]" />, text: "Express" },
+  { icon: <SiNestjs className="w-6 h-6 fill-[#E0234E]" />, text: "Nestjs" },
   {
     icon: <FaWordpress className="w-6 h-6 fill-blue-600" />,
     text: "Wordpress",
@@ -90,6 +101,18 @@ const toolsSkills = [
   {
     text: "Figma",
     icon: <FigmaIcon />,
+  },
+  {
+    text: "MySQL",
+    icon: <SiMysql className="w-6 h-6 fill-[#4479A1]" />,
+  },
+  {
+    text: "Render",
+    icon: <SiRender className="w-6 h-6 fill-[#46E3B7]" />,
+  },
+  {
+    text: "DirectAdmin",
+    icon: <DirectAdmin />,
   },
 ];
 

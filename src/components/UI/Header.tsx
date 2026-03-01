@@ -131,13 +131,13 @@ export const Header: React.FunctionComponent<headerProps> = () => {
           <NavLink className={`hover:text-blue-600`} to={"/contact"}>
             Contact me
           </NavLink>
-          <NavLink className={`hover:text-blue-600`} to={"/playground"}>
-            PlayGround
+          <NavLink className={`hover:text-blue-600`} to={"/startups"}>
+            Startups
           </NavLink>
           <a
             className={`hover:text-blue-600`}
             href={
-              "https://drive.google.com/file/d/1dybfJvslTV7LDM8i1f82dWMYooTCXbwn/view?usp=sharing"
+              "https://drive.google.com/file/d/1O0AYZoqphQcrdmaQz4RkhSpMWRrgzZPt/view?usp=sharing"
             }
             target="_blank"
           >
@@ -248,17 +248,17 @@ export const Header: React.FunctionComponent<headerProps> = () => {
               <li>Contact me</li>
             </NavLink>
             <NavLink
-              to={"/playground"}
+              to={"/startups"}
               className={
-                location.pathname === "/playground"
+                location.pathname === "/startups"
                   ? `dark:text-blue-400 text-blue-600 font-bold`
                   : ""
               }
             >
-              <li>PlayGround</li>
+              <li>Startups</li>
             </NavLink>
             <a
-              href="https://drive.google.com/file/d/1-d-hdX2hwABmlbSWbEmsyUJKG0FepBR_/view?usp=sharing"
+              href="https://drive.google.com/file/d/1O0AYZoqphQcrdmaQz4RkhSpMWRrgzZPt/view?usp=sharing"
               target="_blank"
             >
               <li>Resumé</li>

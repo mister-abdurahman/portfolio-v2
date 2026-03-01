@@ -120,7 +120,7 @@ export const Hero: React.FunctionComponent<HeroProps> = () => {
           <div className="flex gap-2 items-center group">
             <a
               href={
-                "https://drive.google.com/file/d/1dybfJvslTV7LDM8i1f82dWMYooTCXbwn/view?usp=sharing"
+                "https://drive.google.com/file/d/1O0AYZoqphQcrdmaQz4RkhSpMWRrgzZPt/view?usp=sharing"
               }
               target="_blank"
               className={`font-semibold ${

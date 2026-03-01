@@ -5,7 +5,8 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import Works from "./pages/Works";
 import ContactMe from "./pages/ContactMe";
-import { PlayGround } from "./pages/PlayGround";
+import { Startups } from "./pages/Startups";
+import { NotFound } from "./pages/NotFound";
 
 type ThemeContextType = {
   isDarkmode: boolean;
@@ -41,16 +42,12 @@ function App() {
       element: <Works />,
     },
     {
-      path: "/playground",
-      element: <PlayGround />,
+      path: "/startups",
+      element: <Startups />,
     },
     {
       path: "*",
-      element: (
-        <div className="text-5xl sm:text-2xl text-center mt-8">
-          Page Not Found
-        </div>
-      ),
+      element: <NotFound />,
     },
   ]);
 
