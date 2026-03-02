@@ -115,7 +115,7 @@ export const Hero: React.FunctionComponent<HeroProps> = () => {
             I'm a Software Developer based in Nigeria, developing modern
             solutions with a customer-first approach. My passion lies in
             delivering seamless user experiences, ensuring web accessibility for
-            all and building scalable optimized APIs.
+            all and building scalable optimized backend systems.
           </p>
           <div className="flex gap-2 items-center group">
             <a
