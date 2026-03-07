@@ -7,7 +7,7 @@ import Works from "./pages/Works";
 import ContactMe from "./pages/ContactMe";
 import { Startups } from "./pages/Startups";
 import { NotFound } from "./pages/NotFound";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 type ThemeContextType = {
   isDarkmode: boolean;
