@@ -7,6 +7,7 @@ import Works from "./pages/Works";
 import ContactMe from "./pages/ContactMe";
 import { Startups } from "./pages/Startups";
 import { NotFound } from "./pages/NotFound";
+import { Analytics } from "@vercel/analytics/next"
 
 type ThemeContextType = {
   isDarkmode: boolean;
@@ -54,6 +55,8 @@ function App() {
   if (!element) return null;
 
   return (
+    <>
+    <Analytics />
     <ThemeContext.Provider value={{ isDarkmode, toggleTheme }}>
       <AnimatePresence mode="wait" initial={false}>
         <div
@@ -65,6 +68,7 @@ function App() {
         </div>
       </AnimatePresence>
     </ThemeContext.Provider>
+    </>
   );
 }
 
