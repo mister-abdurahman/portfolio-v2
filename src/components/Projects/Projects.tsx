@@ -13,18 +13,18 @@ interface ProjectProps {}
 
 const projects = [
   {
-    name: "Hok Clothing Store",
-    description:
-      "Designed and built a modern clothing e-commerce platform for a UK client, using Next.js and Tailwind for a responsive, high-speed frontend and Nest.js for a powerful backend. My work focused on creating a premium shopping experience with optimized page loads, intuitive navigation, and a secure architecture for long-term scalability.",
-    image: hokfam,
-    url: "https://shop.hokfam.com",
-  },
-  {
     name: "LaundryFlow",
     description:
       "Designed and engineered a comprehensive multi-tenant laundry SaaS ecosystem, featuring a React management dashboard, an Angular-based customer PWA, and a high-performance NestJS/MongoDB backend. I leveraged WebSockets for real-time order synchronization, Paystack for automated billing, and a modular architecture to ensure strict data isolation across thousands of independent tenants.",
     image: laundryflow,
     url: "https://app.laundryflow.live",
+  },
+  {
+    name: "Hok Clothing Store",
+    description:
+      "Designed and built a modern clothing e-commerce platform for a UK client, using Next.js and Tailwind for a responsive, high-speed frontend and Nest.js for a powerful backend. My work focused on creating a premium shopping experience with optimized page loads, intuitive navigation, and a secure architecture for long-term scalability.",
+    image: hokfam,
+    url: "https://shop.hokfam.com",
   },
   {
     name: "Tradit (Mobile)",
