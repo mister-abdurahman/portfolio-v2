@@ -14,6 +14,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { Engine } from "tsparticles-engine";
+import { drive_link } from "../../constants";
 
 interface HeroProps {}
 export const Hero: React.FunctionComponent<HeroProps> = () => {
@@ -119,9 +120,7 @@ export const Hero: React.FunctionComponent<HeroProps> = () => {
           </p>
           <div className="flex gap-2 items-center group">
             <a
-              href={
-                "https://drive.google.com/file/d/1O0AYZoqphQcrdmaQz4RkhSpMWRrgzZPt/view?usp=sharing"
-              }
+              href={drive_link}
               target="_blank"
               className={`font-semibold ${
                 isDarkmode ? "text-blue-400" : "text-blue-600"

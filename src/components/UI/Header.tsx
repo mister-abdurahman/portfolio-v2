@@ -4,6 +4,7 @@ import { MdLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { ScrollUpButton } from "../../assets/icons/icons";
 import { Link } from "react-scroll";
 import { ThemeContext } from "../../App";
+import { drive_link } from "../../constants";
 
 interface headerProps {}
 export const Header: React.FunctionComponent<headerProps> = () => {
@@ -45,11 +46,11 @@ export const Header: React.FunctionComponent<headerProps> = () => {
 
   useEffect(() => {
     window.addEventListener("resize", () =>
-      setIsMobile(window.innerWidth <= 900)
+      setIsMobile(window.innerWidth <= 900),
     );
     return () =>
       window.removeEventListener("resize", () =>
-        setIsMobile(window.innerWidth <= 900)
+        setIsMobile(window.innerWidth <= 900),
       );
   }, [isMobile]);
 
@@ -136,9 +137,7 @@ export const Header: React.FunctionComponent<headerProps> = () => {
           </NavLink>
           <a
             className={`hover:text-blue-600`}
-            href={
-              "https://drive.google.com/file/d/1O0AYZoqphQcrdmaQz4RkhSpMWRrgzZPt/view?usp=sharing"
-            }
+            href={drive_link}
             target="_blank"
           >
             Resumé
@@ -257,10 +256,7 @@ export const Header: React.FunctionComponent<headerProps> = () => {
             >
               <li>Startups</li>
             </NavLink>
-            <a
-              href="https://drive.google.com/file/d/1O0AYZoqphQcrdmaQz4RkhSpMWRrgzZPt/view?usp=sharing"
-              target="_blank"
-            >
+            <a href={drive_link} target="_blank">
               <li>Resumé</li>
             </a>
           </ul>
