@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { EachProject } from "./EachProject";
 import SectionHeading from "../UI/SectionHeader";
-import tradit from "../../assets/images/tradit-mobile.png";
-import kasieyatama from "../../assets/images/kasieyatama.png";
+import tradit from "../../assets/images/tradit.png";
+import tradiu from "../../assets/images/tradiu.png";
 import jambonz from "../../assets/images/jambonz.png";
-import the_wild_oasis from "../../assets/images/the_wild_oasis.jpg";
+// import the_wild_oasis from "../../assets/images/the_wild_oasis.jpg";
 import hokfam from "../../assets/images/hokfam.png";
 import laundryflow from "../../assets/images/laundry_authpage_darkmode.png";
 import surpluslink from "../../assets/images/surplus_image.png";
@@ -18,6 +18,13 @@ const projects = [
       "Designed and engineered a comprehensive multi-tenant laundry SaaS ecosystem, featuring a React management dashboard, an Angular-based customer PWA, and a high-performance NestJS/MongoDB backend. I leveraged WebSockets for real-time order synchronization, Paystack for automated billing, and a modular architecture to ensure strict data isolation across thousands of independent tenants.",
     image: laundryflow,
     url: "https://laundryflow.live",
+  },
+  {
+    name: "Tradiu",
+    description:
+      "Built and maintained responsive, high-performance user interfaces for Tradiu's all-in-one business management platform, helping SMEs streamline invoicing, payments, logistics, and business operations. Collaborated with designers and backend engineers to deliver scalable React/Next.js applications, integrate REST APIs, optimize performance, and create intuitive user experiences using TypeScript and Tailwind CSS.",
+    image: tradiu,
+    url: "https://wwww.tradiu.com/",
   },
   {
     name: "Hok Clothing Store",
@@ -40,13 +47,13 @@ const projects = [
     image: surpluslink,
     url: "https://surpluslink.co.uk",
   },
-  {
-    name: "Kasieyatama",
-    description:
-      "A full-stack printing service platform built with Next.js and Sanity, providing a complete end-to-end flow for customers and business owners. I designed and developed a custom admin dashboard that allows for seamless management of printing listings and customer submissions.",
-    image: kasieyatama,
-    url: "https://www.kasieyatama.com/",
-  },
+  // {
+  //   name: "Kasieyatama",
+  //   description:
+  //     "A full-stack printing service platform built with Next.js and Sanity, providing a complete end-to-end flow for customers and business owners. I designed and developed a custom admin dashboard that allows for seamless management of printing listings and customer submissions.",
+  //   image: kasieyatama,
+  //   url: "https://wwww.kasieyatama.com/",
+  // },
   {
     name: "Jambonz Chrome Extension (Official)",
     description:
@@ -54,13 +61,13 @@ const projects = [
     image: jambonz,
     url: "https://chromewebstore.google.com/detail/jambonz-webrtc-phone/ooglcebddojjkdcfaplbhhjcdkpeiggi?hl=en-US&utm_source=ext_sidebar",
   },
-  {
-    name: "Wild Oasis (Customer-Faced)",
-    description:
-      "A NextJs fullstack hotel app for customers to reserve bookings for different cabins, manage their reserves and other customer operations. This app is a fullstack app and was built with NextJs. It has features such as Google Authentication, Data Streaming, Image optimization, beautiful UI and many more amazing features.",
-    image: the_wild_oasis,
-    url: "https://the-wild-oasis-website-v1.vercel.app/",
-  }
+  // {
+  //   name: "Wild Oasis (Customer-Faced)",
+  //   description:
+  //     "A NextJs fullstack hotel app for customers to reserve bookings for different cabins, manage their reserves and other customer operations. This app is a fullstack app and was built with NextJs. It has features such as Google Authentication, Data Streaming, Image optimization, beautiful UI and many more amazing features.",
+  //   image: the_wild_oasis,
+  //   url: "https://the-wild-oasis-website-v1.vercel.app/",
+  // },
 ];
 
 // const playGround = [
@@ -102,7 +109,7 @@ const projects = [
 
 export const Projects: React.FunctionComponent<ProjectProps> = () => {
   const [projectsToShow] = useState(
-    projects
+    projects,
     // location.pathname === "/playground" ? playGround : projects,
   );
   return (

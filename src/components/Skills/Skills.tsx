@@ -13,7 +13,7 @@ import {
   TypescriptIcon,
   VercelIcon,
   WebpackIcon,
-  DirectAdmin
+  DirectAdmin,
 } from "../../assets/icons/icons";
 import { EachSkill } from "./EachSkill";
 import {
@@ -23,6 +23,7 @@ import {
   SiMongodb,
   SiMysql,
   SiNestjs,
+  SiPostgresql,
   SiRender,
   SiShadcnui,
   SiSupabase,
@@ -30,6 +31,7 @@ import {
 import { FaAngular, FaNodeJs, FaWordpress } from "react-icons/fa";
 import SectionHeading from "../UI/SectionHeader";
 import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
+import { PiOpenAiLogo } from "react-icons/pi";
 
 interface SkillsProps {}
 
@@ -113,6 +115,14 @@ const toolsSkills = [
   {
     text: "DirectAdmin",
     icon: <DirectAdmin />,
+  },
+  {
+    text: "PostgreSQL",
+    icon: <SiPostgresql className="w-6 h-6 fill-[#336791]" />,
+  },
+  {
+    text: "OpenAI",
+    icon: <PiOpenAiLogo className="w-6 h-6 fill-[#336791]" />,
   },
 ];
 
