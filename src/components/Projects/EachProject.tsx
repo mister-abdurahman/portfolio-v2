@@ -86,7 +86,7 @@ export const EachProject: React.FunctionComponent<EachProject> = ({
       <div
         className={`md:basis-3/5 basis-full space-y-6 dark:text-primary_2 ${
           isMobile
-            ? "order-first sm:px-12 px-5"
+            ? "order-first sm:px-12 px-1"
             : index % 2 === 0
               ? "order-first pl-8"
               : "order-last"

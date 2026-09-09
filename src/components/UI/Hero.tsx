@@ -1,6 +1,6 @@
 import React, { useCallback, useContext } from "react";
 import Particles from "react-particles";
-import image from "../../assets/images/profpic.jpg";
+import image from "../../assets/images/profpic.webp";
 import { loadSlim } from "tsparticles-slim";
 import {
   GithubIcon,

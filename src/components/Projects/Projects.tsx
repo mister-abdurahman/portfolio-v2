@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { EachProject } from "./EachProject";
 import SectionHeading from "../UI/SectionHeader";
-import tradit from "../../assets/images/tradit.png";
-import tradiu from "../../assets/images/tradiu.png";
+import tradit from "../../assets/images/tradit.webp";
+import tradiu from "../../assets/images/tradiu.webp";
 import jambonz from "../../assets/images/jambonz.png";
 // import the_wild_oasis from "../../assets/images/the_wild_oasis.jpg";
 import hokfam from "../../assets/images/hokfam.png";
