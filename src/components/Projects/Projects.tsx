@@ -7,7 +7,8 @@ import jambonz from "../../assets/images/jambonz.png";
 // import the_wild_oasis from "../../assets/images/the_wild_oasis.jpg";
 import hokfam from "../../assets/images/hokfam.png";
 import laundryflow from "../../assets/images/laundry_authpage_darkmode.png";
-import surpluslink from "../../assets/images/surplus_image.png";
+// import surpluslink from "../../assets/images/surplus_image.png";
+import depain from "../../assets/images/depain-hero.webp";
 
 interface ProjectProps {}
 
@@ -15,7 +16,7 @@ const projects = [
   {
     name: "LaundryFlow",
     description:
-      "Designed and engineered a comprehensive multi-tenant laundry SaaS ecosystem, featuring a React management dashboard, an Angular-based customer PWA, and a high-performance NestJS/MongoDB backend. I leveraged WebSockets for real-time order synchronization, Paystack for automated billing, and a modular architecture to ensure strict data isolation across thousands of independent tenants.",
+      "Engineered a comprehensive multi-tenant laundry SaaS ecosystem, featuring a React management dashboard, an Angular-based customer PWA, and a high-performance NestJS/MongoDB backend. I leveraged WebSockets for real-time order synchronization, Paystack for automated billing, and a modular architecture to ensure strict data isolation across thousands of independent tenants.",
     image: laundryflow,
     url: "https://laundryflow.live",
   },
@@ -29,9 +30,16 @@ const projects = [
   {
     name: "Hok Clothing Store",
     description:
-      "Designed and built a modern clothing e-commerce platform for a UK client, using Next.js and Tailwind for a responsive, high-speed frontend and Nest.js for a powerful backend. My work focused on creating a premium shopping experience with optimized page loads, intuitive navigation, and a secure architecture for long-term scalability.",
+      "Built a modern clothing e-commerce platform for a UK client, using Next.js and Tailwind for a responsive, high-speed frontend and Nest.js for a powerful backend. My work focused on creating a premium shopping experience with optimized page loads, intuitive navigation, and a secure architecture for long-term scalability.",
     image: hokfam,
     url: "https://shop.hokfam.com",
+  },
+  {
+    name: "Acupuncture Clinic Website",
+    description:
+      "Built and optimized a professional, high-conversion website for a standard acupuncture clinic in Lekki, Lagos, using Next.js for superior SEO performance and Tailwind CSS for an attractive, responsive UI. My work focused on integrating Sanity CMS for seamless blog and content management, creating a soothing user experience, and optimizing the platform to drive client bookings and local engagement.",
+    image: depain,
+    url: "https://depainclinic.com/",
   },
   {
     name: "Tradit (Mobile)",
@@ -40,13 +48,13 @@ const projects = [
     image: tradit,
     url: "https://play.google.com/store/apps/details?id=com.abdurahman.tradeit",
   },
-  {
-    name: "Surpluslink",
-    description:
-      "Designed and built Surpluslink, a dynamic web platform using React and Tailwind CSS for a sleek, responsive frontend and Node.js with MySQL for a robust, data-driven backend. My work focused on developing a custom administrative portal that allows real-time management of blogs and brand data, ensuring the public website reflects live updates with high performance and a seamless user experience.",
-    image: surpluslink,
-    url: "https://surpluslink.co.uk",
-  },
+  // {
+  //   name: "Surpluslink",
+  //   description:
+  //     "Designed and built Surpluslink, a dynamic web platform using React and Tailwind CSS for a sleek, responsive frontend and Node.js with MySQL for a robust, data-driven backend. My work focused on developing a custom administrative portal that allows real-time management of blogs and brand data, ensuring the public website reflects live updates with high performance and a seamless user experience.",
+  //   image: surpluslink,
+  //   url: "https://surpluslink.co.uk",
+  // },
   // {
   //   name: "Kasieyatama",
   //   description:

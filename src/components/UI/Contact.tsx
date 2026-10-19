@@ -11,10 +11,14 @@ import {
 import { AnimatedText } from "./AnimatedText";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { ContactDialog } from "./ContactDialog";
 interface ContactProps {}
 export const Contact: React.FunctionComponent<ContactProps> = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const [openDialog, setOpenDialog] = useState(false);
   return (
     <div className="flex relative justify-center bg-bgImage_1 dark:bg-bgImage_dark sm:px-14 px-5 sm:py-20 py-12">
       <div className="flex flex-col gap-14 items-center">
@@ -25,7 +29,11 @@ export const Contact: React.FunctionComponent<ContactProps> = () => {
         />
 
         <button
-          onClick={() => navigate("/contact")}
+          onClick={() =>
+            location.pathname === "/contact"
+              ? setOpenDialog(true)
+              : navigate("/contact")
+          }
           className="bg-blue-600 w-fit px-8 py-3 text-sm rounded-full text-white"
         >
           Contact Me
@@ -71,6 +79,10 @@ export const Contact: React.FunctionComponent<ContactProps> = () => {
       <span className="absolute md:top-44 lg:right-80 md:right-60 sm:right-36 right-14 sm:top-64 top-40">
         <ContactPinkRects />
       </span>
+      <ContactDialog
+        open={openDialog}
+        onClose={() => setOpenDialog(false)}
+      />
     </div>
   );
 };

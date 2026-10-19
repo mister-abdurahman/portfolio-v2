@@ -15,7 +15,7 @@ export const MeansOfContact: React.FunctionComponent<FnProps> = () => {
       text: "Send me an email",
       linkDetails: (
         <a
-          className="underline font-light text-sm text-gray-500"
+          className="underline font-light text-sm text-primary"
           href="mailto:aramramadan7@gmail.com"
           target="_blank"
         >
@@ -32,7 +32,7 @@ export const MeansOfContact: React.FunctionComponent<FnProps> = () => {
       text: "Chat me on WhatsApp",
       linkDetails: (
         <a
-          className="underline font-light text-sm text-gray-500"
+          className="underline font-light text-sm text-primary"
           href="https://wa.link/cy8shs"
           target="_blank"
         >
@@ -45,7 +45,7 @@ export const MeansOfContact: React.FunctionComponent<FnProps> = () => {
       text: "Connect with me on LinkedIn",
       linkDetails: (
         <a
-          className="underline font-light text-sm text-gray-500"
+          className="underline font-light text-sm text-primary"
           href="https://www.linkedin.com/in/ramadan-aramide-855289218/"
           target="_blank"
         >
